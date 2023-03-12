@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    """The code that parses the command line only runs if the module 
-    is executed as the “main” file"""
+    """prints the sum of 1 and 2"""
     from add_0 import add
 
     a = 1
