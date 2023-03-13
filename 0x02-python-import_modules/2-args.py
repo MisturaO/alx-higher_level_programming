@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    from sys import argv
+    import sys
     """prints the number of and the list of its arguments"""
 
-    lenght = len(argv) - 1
+    lenght = len(sys.argv) - 1
     if lenght == 0:
         print("{} arguments.".format(lenght))
     elif lenght == 1:
@@ -12,4 +12,4 @@ if __name__ == "__main__":
     else:
         print("{} arguments.".format(lenght))
     for num in range(lenght):
-        print("{}: {}".format(num + 1, argv[num + 1]))
+        print("{}: {}".format(num + 1, sys.argv[num + 1]))
