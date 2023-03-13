@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import sys
 
+"""prints the result of the addition of all arguments"""
 if __name__ == "__main__":
     args = len(sys.argv)
     sum = 0
