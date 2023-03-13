@@ -3,8 +3,7 @@ if __name__ == "__main__":
     from sys import argv
     """prints the number of and the list of its arguments"""
 
-    lenght = len(argv)
-    lenght = lenght - 1
+    lenght = len(argv) - 1
 
     if lenght == 0:
         print("{} arguments.".format(lenght))
