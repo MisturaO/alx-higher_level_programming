@@ -5,7 +5,6 @@ if __name__ == "__main__":
     """prints the number of and the list of its arguments"""
 
     lenght = len(argv) - 1
-
     if lenght == 0:
         print("{} arguments.".format(lenght))
     elif lenght == 1:
