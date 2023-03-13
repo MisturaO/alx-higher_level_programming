@@ -11,6 +11,6 @@ if __name__ == "__main__":
     elif lenght == 1:
         print("{} argument:".format(lenght))
     else:
-        print("{} arguments.".format(lenght))
+        print("{} arguments:".format(lenght))
     for num in range(lenght):
         print("{}: {}".format(num + 1, sys.argv[num + 1]))
