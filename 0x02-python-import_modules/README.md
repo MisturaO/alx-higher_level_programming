@@ -12,7 +12,7 @@ What i learnt from this project are:
 
 ---
 
-# General Learning Requirement
+# General Learning Requirements
 * All your files should end with a new line
 * The first line of all your files should be exactly #!/usr/bin/python3
 * A README.md file, at the root of the folder of the project, is mandatory
