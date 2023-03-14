@@ -60,10 +60,10 @@ guillaume@ubuntu:~/0x02$ python3 0-import_add.py
 guillaume@ubuntu:~/0x02$
 ```
 ### Repo:
-
 * GitHub repository: alx-higher_level_programming
 * Directory: 0x02-python-import_modules
 * File: 0-add.py
+
 
 ### 1. My first toolbox!
 Write a program that imports functions from the file calculator_1.py, does some Maths, and prints the result.
@@ -142,10 +142,10 @@ guillaume@ubuntu:~/0x02$ ./1-calculation.py
 guillaume@ubuntu:~/0x02$
 ```
 ### Repo:
-
 * GitHub repository: alx-higher_level_programming
 * Directory: 0x02-python-import_modules
 * File: 1-calculation.py
+
 
 ### 2. How to make a script dynamic!
 Write a program that prints the number of and the list of its arguments.
@@ -176,10 +176,10 @@ guillaume@ubuntu:~/0x02$ ./2-args.py Hello Welcome To The Best School
 guillaume@ubuntu:~/0x02$
 ```
 ### Repo:
-
 * GitHub repository: alx-higher_level_programming
 * Directory: 0x02-python-import_modules
 * File: 2-args.py
+
 
 ### 3. Infinite addition
 Write a program that prints the result of the addition of all arguments
@@ -197,10 +197,10 @@ guillaume@ubuntu:~/0x02$ ./3-infinite_add.py 79 10 -40 -300 89
 guillaume@ubuntu:~/0x02$
 ```
 ### Repo:
-
 * GitHub repository: alx-higher_level_programming
 * Directory: 0x02-python-import_modules
 * File: 3-infinite_add.py
+
 
 ### 4. Who are you?
 Write a program that prints all the names defined by the compiled module hidden_4.pyc (please download it locally).
@@ -218,10 +218,10 @@ print_school
 guillaume@ubuntu:~/0x02$
 ```
 ### Repo:
-
 * GitHub repository: alx-higher_level_programming
 * Directory: 0x02-python-import_modules
 * File: 4-hidden_discovery.py
+
 
 ### 5. Everything can be imported
 Write a program that imports the variable a from the file variable_load_5.py and prints its value.
@@ -240,7 +240,6 @@ guillaume@ubuntu:~/0x02$ ./5-variable_load.py
 guillaume@ubuntu:~/0x02$
 ```
 ### Repo:
-
 * GitHub repository: alx-higher_level_programming
 * Directory: 0x02-python-import_modules
 * File: 5-variable_load.py
