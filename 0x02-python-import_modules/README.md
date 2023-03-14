@@ -1,6 +1,6 @@
-#Python - import & modules
+# Python - import & modules
 
-##General Learning Objective
+## General Learning Objective
 In this project i learnt about the awesome things i can do with python.
 What i learnt from this project are: 
 * How to import functions from another file
@@ -12,17 +12,18 @@ What i learnt from this project are:
 
 ---
 
-#General Learning Requirement
+# General Learning Requirement
 * All your files should end with a new line
 * The first line of all your files should be exactly #!/usr/bin/python3
 * A README.md file, at the root of the folder of the project, is mandatory
 * Your code should use the pycodestyle (version 2.8.*)
 * All your files must be executable
 * The length of your files will be tested using wc
+---
 
-#TASKS
+# TASKS
 
-###0. Import a simple function from a simple file
+### 0. Import a simple function from a simple file
 Write a program that imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 = 3
 * You have to use print function with string format to display integers
 * You have to assign:
@@ -35,7 +36,7 @@ Write a program that imports the function def add(a, b): from the file add_0.py 
 * You are not allowed to use * for importing or __import__
 * Your code should not be executed when imported - by using __import__, like the example below
 
-###TEST
+### TEST
 ```
 guillaume@ubuntu:~/0x02$ cat add_0.py
 #!/usr/bin/python3
@@ -58,13 +59,13 @@ __import__("0-add")
 guillaume@ubuntu:~/0x02$ python3 0-import_add.py
 guillaume@ubuntu:~/0x02$
 ```
-###Repo:
+### Repo:
 
 * GitHub repository: alx-higher_level_programming
 * Directory: 0x02-python-import_modules
 * File: 0-add.py
 
-###1. My first toolbox!
+### 1. My first toolbox!
 Write a program that imports functions from the file calculator_1.py, does some Maths, and prints the result.
 
 * Do not use the function print (with string format to display integers) more than 4 times
@@ -78,7 +79,7 @@ Write a program that imports functions from the file calculator_1.py, does some 
 * You are not allowed to use * for importing or __import__
 * Your code should not be executed when imported
 
-###TEST
+### TEST
 ```
 guillaume@ubuntu:~/0x02$ cat calculator_1.py
 #!/usr/bin/python3
@@ -140,13 +141,13 @@ guillaume@ubuntu:~/0x02$ ./1-calculation.py
 10 / 5 = 2
 guillaume@ubuntu:~/0x02$
 ```
-###Repo:
+### Repo:
 
 * GitHub repository: alx-higher_level_programming
 * Directory: 0x02-python-import_modules
 * File: 1-calculation.py
 
-###2. How to make a script dynamic!
+### 2. How to make a script dynamic!
 Write a program that prints the number of and the list of its arguments.
 
 * The output should be:
@@ -174,13 +175,13 @@ guillaume@ubuntu:~/0x02$ ./2-args.py Hello Welcome To The Best School
 6: School
 guillaume@ubuntu:~/0x02$
 ```
-###Repo:
+### Repo:
 
 * GitHub repository: alx-higher_level_programming
 * Directory: 0x02-python-import_modules
 * File: 2-args.py
 
-###3. Infinite addition
+### 3. Infinite addition
 Write a program that prints the result of the addition of all arguments
 
 * The output should be the result of the addition of all arguments, followed by a new line
@@ -195,13 +196,13 @@ guillaume@ubuntu:~/0x02$ ./3-infinite_add.py 79 10 -40 -300 89
 -162
 guillaume@ubuntu:~/0x02$
 ```
-###Repo:
+### Repo:
 
 * GitHub repository: alx-higher_level_programming
 * Directory: 0x02-python-import_modules
 * File: 3-infinite_add.py
 
-###4. Who are you?
+### 4. Who are you?
 Write a program that prints all the names defined by the compiled module hidden_4.pyc (please download it locally).
 
 * You should print one name per line, in alpha order
@@ -216,13 +217,13 @@ print_hidden
 print_school
 guillaume@ubuntu:~/0x02$
 ```
-###Repo:
+### Repo:
 
 * GitHub repository: alx-higher_level_programming
 * Directory: 0x02-python-import_modules
 * File: 4-hidden_discovery.py
 
-###5. Everything can be imported
+### 5. Everything can be imported
 Write a program that imports the variable a from the file variable_load_5.py and prints its value.
 
 * You are not allowed to use * for importing or __import__
@@ -238,7 +239,7 @@ guillaume@ubuntu:~/0x02$ ./5-variable_load.py
 98
 guillaume@ubuntu:~/0x02$
 ```
-###Repo:
+### Repo:
 
 * GitHub repository: alx-higher_level_programming
 * Directory: 0x02-python-import_modules
