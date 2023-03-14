@@ -1,7 +1,8 @@
 #Python - import & modules
 
 ##General Learning Objective
-* Why Python programming is awesome
+In this project i learnt about the awesome things i can do with python.
+What i learnt from this project are: 
 * How to import functions from another file
 * How to use imported functions
 * How to create a module
@@ -22,7 +23,7 @@
 #TASKS
 
 ###0. Import a simple function from a simple file
-##Write a program that imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 = 3
+Write a program that imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 = 3
 * You have to use print function with string format to display integers
 * You have to assign:
 - the value 1 to a variable called a
@@ -63,8 +64,8 @@ guillaume@ubuntu:~/0x02$
 * Directory: 0x02-python-import_modules
 * File: 0-add.py
 
-###My first toolbox!
-###Write a program that imports functions from the file calculator_1.py, does some Maths, and prints the result.
+###1. My first toolbox!
+Write a program that imports functions from the file calculator_1.py, does some Maths, and prints the result.
 
 * Do not use the function print (with string format to display integers) more than 4 times
 * You have to define:
@@ -146,7 +147,7 @@ guillaume@ubuntu:~/0x02$
 * File: 1-calculation.py
 
 ###2. How to make a script dynamic!
-###Write a program that prints the number of and the list of its arguments.
+Write a program that prints the number of and the list of its arguments.
 
 * The output should be:
 * Number of argument(s) followed by argument (if number is one) or arguments (otherwise), followed by
@@ -180,7 +181,7 @@ guillaume@ubuntu:~/0x02$
 * File: 2-args.py
 
 ###3. Infinite addition
-###Write a program that prints the result of the addition of all arguments
+Write a program that prints the result of the addition of all arguments
 
 * The output should be the result of the addition of all arguments, followed by a new line
 * You can cast arguments into integers by using int() (you can assume that all arguments can be casted into integers)
@@ -201,7 +202,7 @@ guillaume@ubuntu:~/0x02$
 * File: 3-infinite_add.py
 
 ###4. Who are you?
-###Write a program that prints all the names defined by the compiled module hidden_4.pyc (please download it locally).
+Write a program that prints all the names defined by the compiled module hidden_4.pyc (please download it locally).
 
 * You should print one name per line, in alpha order
 * You should print only names that do not start with __
@@ -222,7 +223,7 @@ guillaume@ubuntu:~/0x02$
 * File: 4-hidden_discovery.py
 
 ###5. Everything can be imported
-* Write a program that imports the variable a from the file variable_load_5.py and prints its value.
+Write a program that imports the variable a from the file variable_load_5.py and prints its value.
 
 * You are not allowed to use * for importing or __import__
 * Your code should not be executed when imported
