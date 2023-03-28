@@ -3,8 +3,10 @@
 def safe_print_integer(value):
     """function that prints an integer with "{:d}".format()"""
     try:
-        print("{:d}".format(value))
+        print("{:d}".format(int(value)))
     except ValueError:
+        pass
+    finally:
         pass
     if isinstance(value, int):
         return True
