@@ -3,12 +3,7 @@
 def safe_print_integer(value):
     """function that prints an integer with "{:d}".format()"""
     try:
-        print("{:d}".format(int(value)))
-    except ValueError:
-        pass
-    finally:
-        pass
-    if isinstance(value, int):
+        print("{:d}".format(value))
         return True
-    else:
+    except ValueError:
         return False
