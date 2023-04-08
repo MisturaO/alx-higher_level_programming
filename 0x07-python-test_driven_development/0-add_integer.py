@@ -3,12 +3,7 @@
 
 
 def add_integer(a, b=98):
-    """args are type casted to int or float, or first casted
-    to int if they are float.
-    Args:
-        a: first param
-        b: second param
-
+    """args are type casted to int or float.
     Raises:
             TypeError(If either are non int or non float)
 
