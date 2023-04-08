@@ -4,10 +4,10 @@
 
 def add_integer(a, b=98):
     """args are type casted to int or float.
-    Raises:
+        Raises:
             TypeError(If either are non int or non float)
 
-    Returns:
+        Returns:
             the addition of a and b
     """
     if((not isinstance(a, int) and not isinstance(a, float))):
