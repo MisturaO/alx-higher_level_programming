@@ -61,6 +61,7 @@ class Rectangle():
         so as to print the rectangle class itself to output:
         Rectangle(arg1, arg2)"""
         return ("Rectangle({:d}, {:d})".format(self.__width, self.__height))
+
     def __del__(self):
         """deletes an instance of rectangle"""
         self.rec = self.height * self.width
