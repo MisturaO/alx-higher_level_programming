@@ -68,6 +68,5 @@ class Rectangle():
 
     def __del__(self):
         """deletes an instance of rectangle"""
-        self.rec = self.height * self.width
-        self.rec -= 1
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
