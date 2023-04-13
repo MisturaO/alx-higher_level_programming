@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-"""class named 'MyList' that inherits from 'list'
-a subclass of the list class"""
+"""
+class named 'MyList' that inherits from 'list'
+a subclass of the list class
+"""
 
 
 class MyList(list):
