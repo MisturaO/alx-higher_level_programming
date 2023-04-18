@@ -6,7 +6,8 @@ import json
 
 def from_json_string(my_str):
     """
-    Function that returns a python object from a json string.
+    Function that returns a python object from a json string
+    i.e converts a json data into python object
     Args:
         my_str (str): Takes json string.
     """
