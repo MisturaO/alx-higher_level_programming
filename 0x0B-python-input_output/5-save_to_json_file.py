@@ -5,8 +5,8 @@ import json
 
 
 def save_to_json_file(my_obj, filename):
-    """Writes an object to a text file using json
-    representation
+    """Writes objects to a text file using json
+    representation(writes python objects to json file)
     Args:
         my_object (string): Takes python objects
         filename(string): json file
