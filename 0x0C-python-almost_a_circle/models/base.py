@@ -1,8 +1,9 @@
 #!/usr/bin/python3
+"""Defines the Base class"""
 
 
 class Base:
-    """The Bse class
+    """The Base class
 
     This class is the “base” of all other classes in this project
 
