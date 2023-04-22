@@ -15,44 +15,44 @@ class Rectangle(Base):
             x(int): The x coordinate of the rectangle
             y(int): The y coordinate of the rectangle
         """
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
         super().__init__(id)
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
-        @property
-        def width(self):
-            """set/get the rectangle's width"""
-            return self.__width
+    @property
+    def width(self):
+        """set/get the rectangle's width"""
+        return self.__width
 
-        @width.setter
-        def width(self, value):
-            pass
+    @width.setter
+    def width(self, value):
+        self.__width = value
 
-        @property
-        def height(self):
-            """set/get the rectangle's height"""
-            return self.__height
+    @property
+    def height(self):
+        """set/get the rectangle's height"""
+        return self.__height
 
-        @height.setter
-        def height(self, value):
-            pass
+    @height.setter
+    def height(self, value):
+        self.__height = value
 
-        @property
-        def x(self):
-            """set/get the rectangle's 'x' coordinate"""
-            return self.__x
+    @property
+    def x(self):
+        """set/get the rectangle's 'x' coordinate"""
+        return self.__x
 
-        @x.setter
-        def x(self, value):
-            pass
+    @x.setter
+    def x(self, value):
+        self.__x = value
 
-        @property
-        def y(self):
-            """set/get the rectangle's 'y' coordinate"""
-            return self.__y
+    @property
+    def y(self):
+        """set/get the rectangle's 'y' coordinate"""
+        return self.__y
 
-        @y.setter
-        def y(self, value):
-            pass
+    @y.setter
+    def y(self, value):
+        self.__y = value
