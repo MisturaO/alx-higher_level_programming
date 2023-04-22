@@ -15,11 +15,11 @@ class Rectangle(Base):
             x(int): The x coordinate of the rectangle
             y(int): The y coordinate of the rectangle
         """
-        super().__init__(id)
         self.__width = width
         self.__height = height
         self.__x = x
         self.__y = y
+        super().__init__(id)
 
         @property
         def width(self):
@@ -27,7 +27,7 @@ class Rectangle(Base):
             return self.__width
 
         @width.setter
-        def width(self, width):
+        def width(self):
             self.__width = width
 
         @property
@@ -36,7 +36,7 @@ class Rectangle(Base):
             return self.__height
 
         @height.setter
-        def height(self, height):
+        def height(self):
             self.__height = height
 
         @property
@@ -45,7 +45,7 @@ class Rectangle(Base):
             return self.__x
 
         @x.setter
-        def x(self, x):
+        def x(self):
             self.__x = x
 
         @property
@@ -54,5 +54,5 @@ class Rectangle(Base):
             return self.__y
 
         @y.setter
-        def y(self, y):
+        def y(self):
             self.__y = y
