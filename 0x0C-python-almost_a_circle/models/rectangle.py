@@ -80,6 +80,7 @@ class Rectangle(Base):
         return rect_area
 
     def display(self):
+        """prints in stdout the Rectangle instance with the character '#'"""
         for h in range(self.height):
             for w in range(self.width):
                 print("#", end="")
