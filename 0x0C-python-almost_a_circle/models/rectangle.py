@@ -86,16 +86,18 @@ class Rectangle(Base):
         for _ in range(self.height):
             print(" " * self.x + "#" * self.width)
         """Tried other implementations nested loop and list comprehension:
-       for _ in range(self.y):
-           print()
-       for _ in range(self.height):
+        Nested Loop:
+        for _ in range(self.y):
+            print()
+        for _ in range(self.height):
            for _ in range(self.x):
                 print(" ", end="")
             for _ in range(self.width):
                print("#", end="")
             print()
-      [print() for _ in range(self.y)]
-      [print(" " * self.x + "#" * self.width) for _ in range(self.height)]
+        List comprehension:
+        [print() for _ in range(self.y)]
+        [print(" " * self.x + "#" * self.width) for _ in range(self.height)]
         """
     def __str__(self):
         """
