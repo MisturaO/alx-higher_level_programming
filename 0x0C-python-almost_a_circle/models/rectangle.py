@@ -110,6 +110,7 @@ class Rectangle(Base):
                                                 self.y,
                                                 self.width,
                                                 self.height))
+
     def update(self, *args):
         """
         Assigns a “no-keyword argument” to each class attribute:
