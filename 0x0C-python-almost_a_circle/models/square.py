@@ -28,3 +28,26 @@ class Square(Rectangle):
     def __str__(self):
         return("[{}] ({}) {}/{} - {}".format(type(self).__name__, self.id,
                                              self.x, self.y, self.size))
+
+    def update(self, *args, **kwargs):
+        """
+        Assigns args to class attrs through *args and *kwargs.
+        **kwargs must be skipped if *args exists and is not empty:
+            Args:
+                *args is the list of arguments - no-keyworded arguments:
+                    1st argument should be the id attribute
+                    2nd argument should be the size attribute.
+                    3rd argument should be the x attribute.
+                    4th argument should be the y attribute
+        """
+        if len(args) != 0:
+            try:
+                self.id = args[0]
+                self.size = args[1]
+                self.x = args[2]
+                self.y = args[3]
+            except IndexError:
+                pass
+        else:
+            for k, v in kwargs.items():
+                setattr(self, k, v)
