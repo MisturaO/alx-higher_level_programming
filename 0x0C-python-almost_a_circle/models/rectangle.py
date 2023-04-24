@@ -111,18 +111,25 @@ class Rectangle(Base):
                                                 self.width,
                                                 self.height))
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
-        Assigns a “no-keyword argument” to each class attribute:
-        NOTE: Argument order is super important
+        Assigns a “no-keyword argument(*args)” and a
+        “keyword argument(*kwargs)”to each class attribute:
+        NOTE: Argument order is super important.**kwargs must
+        be skipped if *args exists and is not empty.
         Args:
-            *args(int): assign arguments to attributes
+            *args(int): assigns args to attributes
+            *kwargs(int): assigns args to attrs if len is not empty
         """
-        try:
-            self.id = args[0]
-            self.width = args[1]
-            self.height = args[2]
-            self.x = args[3]
-            self.y = args[4]
-        except IndexError:
-            pass
+        if len(args) == 0:
+            for k, v in kwargs.items():
+                setattr(self, k, v)
+        else:
+            try:
+                self.id = args[0]
+                self.width = args[1]
+                self.height = args[2]
+                self.x = args[3]
+                self.y = args[4]
+            except IndexError:
+                pass
