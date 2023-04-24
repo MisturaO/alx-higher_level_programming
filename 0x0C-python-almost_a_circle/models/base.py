@@ -27,7 +27,7 @@ class Base:
     def to_json_string(list_dictionaries):
         """ returns the JSON string representation of list of dictionaries.
         Otherwise,return the '[]'"""
-        if list_dictionaries is None or len(list_dictionaries) == 0:
+        if list_dictionaries is None or len(list_dictionaries) == []:
             return "[]"
         else:
             j_string = json.dumps(list_dictionaries)
