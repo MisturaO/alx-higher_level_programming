@@ -43,3 +43,14 @@ class Base:
                 for i in list_objs:
                     list_i.append(i.to_dictionary())
             f.write(cls.to_json_string(list_i))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Converts JSON string representation and returns it as python data
+        Args:
+           json_string(str): json_string is a string representing
+           a list of dictionaries"""
+        if json_string:
+            return json.loads(json_string)
+        else:
+            return "[]"
