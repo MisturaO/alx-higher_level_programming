@@ -47,6 +47,7 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         """Converts JSON string representation and returns it as python data
+        (This returns the deserialization of a JSON string).
         Args:
            json_string(str): json_string is a string representing
            a list of dictionaries"""
