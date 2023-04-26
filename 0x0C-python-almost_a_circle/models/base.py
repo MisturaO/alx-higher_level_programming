@@ -83,7 +83,7 @@ class Base:
         try:
             with open(filename, "r", encoding="utf-8") as f:
                 instances = cls.from_json_string(f.read())
-        except:
+        except IOError:
             return []
         for instance in instances:
             var = cls.create(**instance)
