@@ -55,3 +55,18 @@ class Base:
             return json.loads(json_string)
         else:
             return []
+
+    @classmethod
+    def create(cls, **dictionary):
+        """Returns instance of the child class with all
+        attributes already set:
+            Rectangle: takes "width and height" values.
+            Square: takes"size" which has the values of
+            both"width and height" stored in attribute size"""
+        if dictionary:
+            if cls.__name__ == "Rectangle":
+                dummy_instance = cls(1, 1)
+            elif cls.__name__ == "Square":
+                dummy_instance = cls(1)
+            dummy_instance.update(**dictionary)
+        return dummy_instance
