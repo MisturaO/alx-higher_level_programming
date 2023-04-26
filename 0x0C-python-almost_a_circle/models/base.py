@@ -80,9 +80,12 @@ class Base:
             class using this method)"""
         instance_list = []
         filename = cls.__name__ + ".json"
-        with open(filename, "r", encoding="utf-8") as f:
-            instances = cls.from_json_string(f.read())
-            for instance in instances:
-                var = cls.create(**instance)
-                instance_list.append(var)
-            return instance_list
+        try:
+            with open(filename, "r", encoding="utf-8") as f:
+                instances = cls.from_json_string(f.read())
+        except:
+            []
+        for instance in instances:
+            var = cls.create(**instance)
+            instance_list.append(var)
+        return instance_list
