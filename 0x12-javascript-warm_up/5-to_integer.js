@@ -7,8 +7,8 @@
 
 const num = parseInt(process.argv[2]);
 
-if (!num === parseInt) {
+if (num !== parseInt) {
   console.log('Not a number');
 } else {
-  console.log(num);
+  console.log(`My number: ${num}`);
 }
