@@ -11,7 +11,7 @@ if __name__ == "__main__":
                          db="hbtn_0e_0_usa", port=3306, passwd="bukola1091")
     cur = db.cursor()
     cur.execute("SELECT name FROM states WHERE name\
-                Like 'N%' ORDER BY name ASC")
+                Like 'N%' ORDER BY states.id ASC")
     N_name = cur.fetchall()
 
     for names in N_name:
