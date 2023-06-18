@@ -7,12 +7,12 @@ from sys import argv
 """so my code can only be executed when it's script is run
 directly and not execute when imported into another module"""
 if __name__ == "__main__":
-    db = MySQLdb.connect(host="localhost", user="bukola",
-                         db="hbtn_0e_0_usa", port=3306, passwd="bukola1091")
+    db = MySQLdb.connect(host="localhost", user=argv[1],
+                         passwd=argv[2], db=argv[3], port=3306)
     cur = db.cursor()
     cur.execute("SELECT * FROM states WHERE name\
                 Like 'N%' ORDER BY states.id ASC")
-    N_name = cur.fetchall()
+    rows = cur.fetchall()
 
-    for names in N_name:
-        print(names)
+    for row in rows:
+        print(row)
