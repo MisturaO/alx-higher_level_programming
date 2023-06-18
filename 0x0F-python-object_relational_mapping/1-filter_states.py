@@ -8,10 +8,10 @@ from sys import argv
 directly and not execute when imported into another module"""
 if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost", user=argv[1],
-                         passwd=argv[2], db=argv[3], port=3306)
+                         port=3306, passwd=argv[2], db=argv[3])
     cur = db.cursor()
     cur.execute("SELECT * FROM states WHERE name\
-                Like BINARY 'N%' ORDER BY states.id ASC")
+                Like 'N%' ORDER BY states.id ASC")
     rows = cur.fetchall()
 
     for row in rows:
