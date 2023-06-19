@@ -9,7 +9,7 @@ if __name__ == "__main__":
                         passwd=argv[2], db=argv[3], port=3306)
 
     cur = db.cursor()
-    cur.execute("SELECT cities.id, states.name, cities.name\
+    cur.execute("SELECT cities.id, cities.name, states.name\
                 FROM cities, states\
                 WHERE states.id = cities.state_id\
                 ORDER BY cities.id ASC")
