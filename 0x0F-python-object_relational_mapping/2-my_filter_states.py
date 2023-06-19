@@ -22,4 +22,4 @@ if __name__ == "__main__":
 
     for row in rows:
         if argv[4] == row[1]:
-            print(row[1])
+            print(row)
