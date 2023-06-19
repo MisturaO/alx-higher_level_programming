@@ -16,10 +16,12 @@ if __name__ == "__main__":
 
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM states ORDER BY states.id ASC")
+    cur.execute("SELECT * FROM states\
+    WHERE NAME LIKE '{}'\
+    ORDER BY states.id ASC".format(argv[4]))
 
     rows = cur.fetchall()
 
     for row in rows:
-        if argv[4] == row[1]:
-            print(row)
+        # if argv[4] == row[1]:
+        print(row)
