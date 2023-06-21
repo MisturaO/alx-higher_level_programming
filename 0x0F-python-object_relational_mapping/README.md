@@ -1,2 +1,3 @@
 # Python - Object-relational mapping
-## OOP || SQL || MySQL || MySQLdb || ORM || SQLAlchemy
+## CONCEPTS:
+-- OOP || SQL || MySQL || MySQLdb || ORM || SQLAlchemy
