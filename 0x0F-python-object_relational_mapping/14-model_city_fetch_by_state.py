@@ -3,7 +3,7 @@
 This script prints all City objects from the database hbtn_0e_14_usa
     Prints table columns wherePrints table columns where
     'State.id is linked with City.state_id'
-    """
+"""
 from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
@@ -20,7 +20,7 @@ if __name__ == "__main__":
     session = Session()
 
     objs = session.query(State.name, City.id, City.name).filter(
-                         State.id == City.state_id).order_by(City.id)
+                         State.id == City.state_id)
     for obj in objs:
         print("{}: ({}) {}".format(obj[0], obj[1], obj[2]))
 
