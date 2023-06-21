@@ -1,6 +1,2 @@
 # Python - Object-relational mapping
-## OOP
-## SQL
-## MySQL
-## ORM
-## SQLAlchemy
+## OOP || SQL || MySQL || MySQLdb || ORM || SQLAlchemy
