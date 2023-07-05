@@ -2,7 +2,8 @@
 """
 Making a GET request with the 'requests' module:
 This module has methods for GET, POST, DELETE etc and doesn't
-requires some extra step we use in the 'urllib.request' module.
+require the extra steps we use in the 'urllib.request' module
+e.g. it authomatically decodes the content body of the reponse.
 
 This Python script fetches https://alx-intranet.hbtn.io/status
 """
