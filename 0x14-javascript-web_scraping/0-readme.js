@@ -1,6 +1,6 @@
 #!/usr/bin/node
-const fs = require('fs')
+const fs = require('fs');
 
 fs.readFile(process.argv[2], 'utf-8', function (err, content) {
-        console.log(err || content)
+  console.log(err || content);
 });
