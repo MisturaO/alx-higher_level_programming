@@ -7,14 +7,12 @@ const request = require('request');
 const UrlReq = process.argv[2];
 const FilePath = process.argv[3];
 
-request(UrlReq, function (error, _response, body) {
-  body = JSON.parse(body);
+request(UrlReq, function (_error, _response, body) {
+//   body = JSON.parse(body);
   // console.log(body);
-  if (!error) {
-    fs.writeFile(FilePath, body, 'utf-8', function (error) {
+    fs.writeFileSync(FilePath, body, 'utf-8', function (error) {
       if (error) {
         console.log(error);
       }
     });
-  }
 });
