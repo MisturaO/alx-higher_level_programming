@@ -7,23 +7,23 @@ const request = require('request');
 
 // const ApiUrl = 'https://jsonplaceholder.typicode.com/todos'
 
-request(process.argv[2], function(err, _response, body){
-    if (err){
-        console.log(response)
-    } else{
-        usersCompletedTasks = {};
-        body = JSON.parse(body)
+request(process.argv[2], function (err, response, body) {
+  if (err) {
+    console.log(response);
+  } else {
+    const usersCompletedTasks = {};
+    body = JSON.parse(body);
 
-        for(let i = 0; i < body.length; i++){
-            const userId = body[i].userId;
-            const completed = body[i].completed;
+    for (let i = 0; i < body.length; i++) {
+      const userId = body[i].userId;
+      const completed = body[i].completed;
 
-            if (completed && !usersCompletedTasks[userId]){
-                usersCompletedTasks[userId] = 0;
-            }
+      if (completed && !usersCompletedTasks[userId]) {
+        usersCompletedTasks[userId] = 0;
+      }
 
-            if (completed) ++usersCompletedTasks[userId];
-        }
-        console.log(usersCompletedTasks);
+      if (completed) ++usersCompletedTasks[userId];
     }
-})
+    console.log(usersCompletedTasks);
+  }
+});
