@@ -12,7 +12,7 @@ request(API_URL + EpisodeNum, function (_err, _response, body) {
 
 
 
-// This link will get the first dictionary in the API's 'results'
+// This link's endpoint (films/) will get the first dictionary in the API's 'results'
 // property's list of dictionaries: 'https://swapi-api.alx-tools.com/api/films/1',
 // because 1 was passed to it which is a value we can pass to the cmd line to
 // get the dictinary index before extracting a key's(e.g 'title') value from the dict
