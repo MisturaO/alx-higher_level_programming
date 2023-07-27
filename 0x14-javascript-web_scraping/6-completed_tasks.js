@@ -22,7 +22,9 @@ request(process.argv[2], function (err, response, body) {
         usersCompletedTasks[userId] = 0;
       }
 
-      if (completed) ++usersCompletedTasks[userId];
+      if (completed){
+        ++usersCompletedTasks[userId];
+      }
     }
     console.log(usersCompletedTasks);
   }
